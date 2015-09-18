@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="updateApp">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
@@ -32,9 +32,7 @@
 				where the url may be the domain or localhost
 			 -->
 			<label for="usertype">Usertype</label><br />
-			<select id="username" required>
-				<div id="usertypes"></div>
-			</select>
+			<div id="usertype"></div>
 		</p>
 		<p>
 			<label for="email">email</label><br />
@@ -53,9 +51,8 @@
 		</p>
 		<p>
 			<label for="new_usertype">new usertype</label><br />
-			<select id="new_usertype" required>
-				<div id="usertypes"></div>
-			</select>
+			<div id="new_usertype"></div>
+
 		</p>
 		<button id="updatebutton">Update</button><br />
 	</div>
@@ -69,6 +66,7 @@
 		</p>
 		<button id="delete_user">Delete</button><br />
 	</div>
+	
 	<script src="js/update.js"></script>
 </body>
 </html>

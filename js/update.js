@@ -8,7 +8,7 @@ $(document).ready(function() {
 		var uname = $("#username").val();
 		var usertype = $("#usertype").val();
 		var email = $("#email").val();
-		var data = JSON.stringify({name:uname, usertype:usertype, email:email});
+		var data = JSON.stringify({uname:uname, usertype:usertype, email:email});
 		var link = domainlink+'/php/get.php?data='+data+'&request=add_user';
 
 		$.ajax({

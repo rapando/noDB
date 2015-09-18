@@ -1,5 +1,1 @@
-[
-	{"id":1, "type":"Manager"},
-	{"id":2, "type":"Director"},
-	{"id":3, "type":"Salesman"}
-]
+[{"id":1, "type":"Manager"},{"id":2, "type":"Director"},{"id":3, "type":"Salesman"}]

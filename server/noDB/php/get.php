@@ -1,4 +1,7 @@
+
 <?php
+
+#problem adding another user to the users.json file. Though will solve the problem tomorrow
 if(empty($_GET['cb']) or empty($_GET['request'])) {
 print "no request";
 } 

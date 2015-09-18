@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" ng-app="updateApp">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
@@ -11,13 +11,64 @@
 </head>
 <body>
 	<header>
-		<h1>Update</h1>
+		<h1>Update Users</h1>
 	</header>
 	<nav>
 		<a href="index.html">Home</a>
-		<a href="#">Update</a>
+		<a href="items.html">Items</a>
 	</nav>
-
-	<script src="js/main.js"></script>
+	<br />
+	<hr />
+	<br />
+	<h2>Add a user</h2>
+	<div class="form">
+		<p>
+			<label for="username">Username</label><br />
+			<input type="text" maxlength="20" id="username" required>
+		</p>
+		<p>
+			<!-- We shall fetch the usertypes form an online file
+				http://url/noDB/files/users/usertypes.json
+				where the url may be the domain or localhost
+			 -->
+			<label for="usertype">Usertype</label><br />
+			<select id="username" required>
+				<div id="usertypes"></div>
+			</select>
+		</p>
+		<p>
+			<label for="email">email</label><br />
+			<input type="email" maxlength="30" id="email" required>
+		</p>
+		<button id="adduser">Add</button><br />
+	</div>
+	<br />
+	<hr />
+	<h2>Update User</h2>
+	<div class="form">
+		<p>
+			<!-- The email will be used to search the user -->
+			<label for="u_email">email</label><br />
+			<input type="email" maxlength="30" id="u_email" required>
+		</p>
+		<p>
+			<label for="new_usertype">new usertype</label><br />
+			<select id="new_usertype" required>
+				<div id="usertypes"></div>
+			</select>
+		</p>
+		<button id="updatebutton">Update</button><br />
+	</div>
+	<br />
+	<hr />
+	<h2>Delete a user</h2>
+	<div class="form">
+		<p>
+			<label for="d_email">email</label><br />
+			<input type="email" maxlength="30" id="d_email" required>
+		</p>
+		<button id="delete_user">Delete</button><br />
+	</div>
+	<script src="js/update.js"></script>
 </body>
 </html>

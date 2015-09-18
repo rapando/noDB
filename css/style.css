@@ -1,6 +1,5 @@
 * {
 	max-width: 100%;
-	padding: 0;
 }
 header {
 	height: 50px;
@@ -18,4 +17,8 @@ nav a{
 nav a:hover {
 	color:red;
 	text-decoration: underline;
+}
+
+.form {
+	background-color:slategray;
 }

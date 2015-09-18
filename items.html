@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="itemsApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>items</title>
+	<meta name="description" content="This is to demonstrate how to store data online without a db.">
+	<meta name="author" content="Samson Rapando and Daniel Warui. BSc Computer Science. The University of Nairobi">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Items</h1>
+	</header>
+	
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="update.html">Update</a>
+	</nav>
+	<br />
+	<hr />
+	<br />
+	<h2>Add an item</h2>
+	<div class="form">
+		<p>
+			<label for="item_name">Name</label><br />
+			<input type="text" maxlength="30" id="item_name" required>
+		</p>
+		<p>
+			<label for="item_code">Code</label><br />
+			<input type="text" maxlength="5" id="item_code" required>
+		</p>
+		<button id="add_item">Add</button>
+		<br />
+	</div>
+	<br /><hr />
+	<h2>Delete Item</h2>
+	<div class="form">
+		<p>
+			<label for="d_code">Code</label><br />
+			<input type="text" maxlength="5" id="d_code" required>
+		</p>
+		<button id="delete_item">Delete</button>
+		<br />
+	</div>
+	<script src="js/items.js"></script>
+</body>
+</html>

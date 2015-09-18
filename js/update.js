@@ -2,6 +2,30 @@ $(document).ready(function() {
 	var domainlink = 'http://localhost/noDB';
 	getusertypes();
 
+	//code to fetch the data for the users
+
+	$("#adduser").on('click', function() {
+		var uname = $("#username").val();
+		var usertype = $("#usertype").val();
+		var email = $("#email").val();
+		var data = JSON.stringify({name:uname, usertype:usertype, email:email});
+		var link = domainlink+'/php/get.php?data='+data+'&request=add_user';
+
+		$.ajax({
+			dataType:'jsonp',
+			jsonp:'cb',
+			timeout:10000,
+			url:link,
+			success:function(data) {
+				alert(data);
+				$("#username").val('');
+				$("#usertype").val('');
+				$("#email").val('');
+			}, error:function() {
+				alert("Check connection");
+			}
+		})
+	});
 
 	function getusertypes() {
 		$.ajax({

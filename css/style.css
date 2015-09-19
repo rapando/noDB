@@ -7,18 +7,13 @@ header {
 	color:white;
 	font-family:'book antiqua';
 }
-
-nav a{
-	color:black;
-	font-size: 17px;
-	margin-left: 5px;
-	text-decoration: none;
+textarea {
+	width: 100%;
+	font-family: 'book antiqua';
+	font-size: 13px;
 }
-nav a:hover {
-	color:red;
-	text-decoration: underline;
-}
-
-.form {
-	background-color:slategray;
+#loader {
+	max-width: 200px;
+	max-height: 200px;
+	top:50%;
 }

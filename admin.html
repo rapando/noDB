@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Little Chat</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-controller="commentController">
+	<header>
+		<h1>Little Chat | Admin</h1>
+	</header>
+	<hr />
+	<a href="index.html">Home</a>
+	<img src="images/ajax-loader_010.gif" id="loader">
+	<h1>Delete a comment</h1>
+	<br />
+	<input type="text" id="id" maxlength="4" placeholder="commentid"><button id="delbutton">Delete</button><br />
+	
+	<div id="comments"></div>
+	<br />
+	
+	<script src="js/admin.js"></script>
+</body>
+</html>

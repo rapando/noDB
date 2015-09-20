@@ -17,3 +17,10 @@ textarea {
 	max-height: 200px;
 	top:50%;
 }
+ul {
+	background:gray;
+
+}
+li {
+	list-style-type: none;
+}

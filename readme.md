@@ -23,3 +23,4 @@ The tables are not related as in a relational database. However, the information
 ______
 
 Rapando Samson and Daniel Warui
+BSc Computer Science, The University of Nairobi (2015-2018)

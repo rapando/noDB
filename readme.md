@@ -1,3 +1,6 @@
+--->
+For global use, I have copied the the server side code to my online server. To use this, change the domainlink value to 'http://apps.rapando.co.ke';
+________
 !!IMPORTANT!!
 in the js files
 js/admin.js
@@ -14,8 +17,7 @@ js/admin.js
  then set the variable to 'http://localhost/myProjects';
 However, dont change any variable name
 
---->
-For global use, I have copied the the server side code to my online server. To use this, change the domainlink value to 'http://apps.rapando.co.ke';
+
 
 ______________
 /This is a system where the information is stored online, in JSON formats in .json files. The files will be created with PHP if they dont exist. The system holds the views of users on a certain topic managed by an admin.

@@ -9,7 +9,7 @@ app.controller('commentController', ['$scope', function($scope) {
 
 // The JQUery Code
 var jq = $.noConflict();
-var domainlink = 'http://localhost';
+var domainlink = 'http://localhost/tuts';
 jq(document).ready(function() {
 	fetchcomments();
 	jq("#loader").hide();
@@ -23,7 +23,7 @@ jq(document).ready(function() {
 			jq.ajax({
 				dataType:'jsonp',
 				jsonp:'cb',
-				url:domainlink+'/nodb/php/comments.php?req=1&name='+name+'&comment='+comment,
+				url:domainlink+'/noDB/php/comments.php?req=1&name='+name+'&comment='+comment,
 				
 				success:function(data) {
 					alert(data);
@@ -46,7 +46,7 @@ jq(document).ready(function() {
 		jq.ajax({
 			dataType:'jsonp',
 			jsonp:'cb',
-			url:domainlink+'/nodb/php/comments.php?req=2',
+			url:domainlink+'/noDB/php/comments.php?req=2',
 			timeout:10000,
 			success:function(data) {
 				jq("#noc").html(data.length);

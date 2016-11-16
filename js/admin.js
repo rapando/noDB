@@ -8,7 +8,7 @@ A simple chat without a database
 var jq = $.noConflict();
 jq(document).ready(function() {
 	/*assign the domain link to a global variable domainlink. In case you are working online, edit this and paste the noDB folder inside server folder into the root of your public_html folder */
-	var domainlink = 'http://localhost';
+	var domainlink = 'http://localhost/tuts';
 	var curr_comments;
 	fetchcomments();
 	jq("#loader").hide();
@@ -18,7 +18,7 @@ jq(document).ready(function() {
 		var coms = curr_comments.reverse();
 		if(coms[commentid]) {
 			coms.splice(commentid, 1);
-			var url = domainlink+'/nodb/php/comments.php?req=3&data='+JSON.stringify(coms);
+			var url = domainlink+'/noDB/php/comments.php?req=3&data='+JSON.stringify(coms);
 			jq.ajax({
 				dataType:'jsonp',
 				jsonp:'cb',
@@ -41,7 +41,7 @@ jq(document).ready(function() {
 		jq.ajax({
 			dataType:'jsonp',
 			jsonp:'cb',
-			url:domainlink+'/nodb/php/comments.php?req=2',
+			url:domainlink+'/noDB/php/comments.php?req=2',
 			timeout:10000,
 			success:function(data) {
 				curr_comments = data;

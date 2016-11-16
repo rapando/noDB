@@ -20,8 +20,7 @@ jq(document).ready(function() {
 			coms.splice(commentid, 1);
 			var url = domainlink+'/noDB/php/comments.php?req=3&data='+JSON.stringify(coms);
 			jq.ajax({
-				dataType:'jsonp',
-				jsonp:'cb',
+				dataType:'json',
 				timeout:10000,
 				url:url,
 				success:function(data) {
@@ -39,8 +38,7 @@ jq(document).ready(function() {
 
 	function fetchcomments() {
 		jq.ajax({
-			dataType:'jsonp',
-			jsonp:'cb',
+			dataType:'json',
 			url:domainlink+'/noDB/php/comments.php?req=2',
 			timeout:10000,
 			success:function(data) {

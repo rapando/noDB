@@ -25,17 +25,17 @@ function addcomment() {
 	$data[$i]['comment'] = $comment;
 	$data[$i]['moment'] = time();
 	file_put_contents('../files/comments.json', json_encode($data));
-	print $_GET['cb'].'('.json_encode("Comment posted!").')';
+	print json_encode("Comment posted!");
 }
 
 function fetchcomments() {
 	$data = file_get_contents('../files/comments.json');
-	print $_GET['cb'].'('.$data.')';
+	print  $data;
 }
 
 function deletecomments() {
 	$data = $_GET['data'];
 	file_put_contents('../files/comments.json', $data);
-	print $_GET['cb'].'('.json_encode("Comment deleted successfully").')';
+	print json_encode("Comment deleted successfully");
 }
 ?>

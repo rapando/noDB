@@ -21,8 +21,7 @@ jq(document).ready(function() {
 		comment = comment.trim();
 		if(name.length >= 2 && comment.length >=2) {
 			jq.ajax({
-				dataType:'jsonp',
-				jsonp:'cb',
+				dataType:'json',
 				url:domainlink+'/noDB/php/comments.php?req=1&name='+name+'&comment='+comment,
 				
 				success:function(data) {
@@ -44,8 +43,7 @@ jq(document).ready(function() {
 
 	function fetchcomments() {
 		jq.ajax({
-			dataType:'jsonp',
-			jsonp:'cb',
+			dataType:'json',
 			url:domainlink+'/noDB/php/comments.php?req=2',
 			timeout:10000,
 			success:function(data) {
